@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="justify-self-center m-6">
+        <p class="text-center font-bold">Do you love me?</p>
+        <button onclick="Yes()"  class="w-32 h-8 bg-blue-600 rounded-2xl text-white ">Yes</button>
+        <button onclick="No()" class="w-32 h-8 bg-blue-600 rounded-2xl text-white ">No</button>
+    </div>
+    <p id="btn-no" class="text-red-600 hidden  text-center font-bold">U eg trov tae slanh me</p>
+    <p id="btn-yes" class="text-red-600 hidden text-center font-bold">I love u babe😘🙈</p>
+    <script>
+        btnNo=document.getElementById("btn-no");
+        btnYes=document.getElementById("btn-yes");
+        window.Yes=function(){
+        btnYes.classList.remove('hidden');
+     };
+        window.No=function(){
+        btnNo.classList.remove('hidden');
+     };
+    </script>
+</body>
+</html>
